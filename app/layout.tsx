@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import ContactForm from "./components/ContactForm";
-import CallToAction from "./components/CallToAction";
-import Navbar from "./components/navbar/Navbar"
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/footer";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,8 +24,7 @@ export default function RootLayout({
           <div className="flex  flex-row  justify-between  px-lengthLg3 py-lengthLg3">
             {children}
           </div>
-          {/* <CallToAction />
-          <ContactForm /> */}
+          <Footer />
         </div>
 
 

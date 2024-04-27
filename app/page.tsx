@@ -6,6 +6,7 @@ import OurServices from "./components/services/page"
 import Trends from "./components/trends/page"
 import AboutUs from "./components/about/page";
 
+
 export default function Home() {
   return (
     <><main>
@@ -13,7 +14,6 @@ export default function Home() {
       <Trends />
       <OurServices />
       <AboutUs />
-
     </main></>
   )
 }
