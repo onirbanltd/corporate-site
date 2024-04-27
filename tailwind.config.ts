@@ -7,12 +7,12 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
-    },
+    // screens: {
+    //   sm: '480px',
+    //   md: '768px',
+    //   lg: '976px',
+    //   xl: '1440px',
+    // },
     colors: {
       purple: "#160f29",
       caribbean: "#246a73",
@@ -26,9 +26,12 @@ const config: Config = {
       roboto: ["Roboto"]
     },
     fontSize: {
-      h1: "24px",
-      h2: "16px",
-      h3: "12px"
+      // header: "92.4px",
+      h1: "64px",
+      h2: "28px",
+      h3: "24px",
+      h4: "16px",
+
     },
     spacing: {
       lengthSm1: "0.25rem",

@@ -1,30 +1,31 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
+import Logo from "../../../public/Onirban8.png"
 
 
 const link = [
     { url: "/", title: "Home" },
-    { url: "/about", title: "About Us" },
+    { url: "/aboutus", title: "About Us" },
     { url: "/services", title: "Our Services" },
 ];
 const Navbar = () => {
 
     return (
-        <div className="navbar bg-base-100">
+        <nav className="flex w-full items-center justify-between navbar bg-base-100 p-lengthMd2">
 
             <div className="navbar-center">
-                <Link href="/"><Image src="/Onirban8.png " alt='logo' width={200} height={100} /></Link>
+                <Link href="/"><Image src={Logo} alt='logo' height={80} width={120} /></Link>
 
             </div>
-            <div className="navbar-center sm:hidden lg:flex">
-                <ul className=" flex-row  justify-between px-1">
+            <div className="navbar-center sm:hidden md:hidden lg:flex">
+                <ul>
                     <li> {link.map(link => (
-                        <Link href={link.url} key={link.title}>{link.title}</Link>
+                        <Link href={link.url} key={link.title} className=" flex-row  justify-between  px-lengthSm3">{link.title}</Link>
                     ))}</li></ul>
             </div>
 
-            <div className="navbar-end lg:hidden">
+            <div className="navbar-end md:hidden lg:hidden">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -38,7 +39,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     )
 }
 
