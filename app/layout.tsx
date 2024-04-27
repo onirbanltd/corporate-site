@@ -19,11 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="w-screen h-screen  bg-gradient-to-b from-gray-100  to-cyan-100">
+        <div className=" bg-gradient-to-r from-gray-100  to-cyan-100...">
           <Navbar />
-          {children}
-          <CallToAction />
-          <ContactForm />
+          <div className="flex  flex-row  justify-between  px-lengthLg3 py-lengthLg3">
+            {children}
+          </div>
+          {/* <CallToAction />
+          <ContactForm /> */}
         </div>
 
 
