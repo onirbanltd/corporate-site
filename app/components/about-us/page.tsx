@@ -1,12 +1,21 @@
 import React from 'react'
-import Hero from '../hero/page'
-import CallToAction from '../CallToAction'
+import Brain from '../brain/brain'
+import CallToAction from '../../CallToAction'
 
 const AboutUs = () => {
     return (
         <>
-            <section className='p-lengthLg1'>
-                <Hero />
+            <section className=' pt-lengthMd1'>
+                <div className=' font-oswald   text-purple'>
+                    <h1 className='text-center text-h1 font-extrabold'>Spark Your Startup. Ignite Success.</h1>
+                    <p className='font-roboto text-h2 text-purple  pt-lengthSm2 text-center'>We are your secret weapon for a successful startup.
+                    </p>
+                </div>
+
+            </section>
+            <section className='flex justify-center'><Brain /></section>
+            <section className='px-lengthMd3 py-lengthMd3'>
+
                 <div className=' font-oswald font-bold text-h1 p-lengthLg1 text-center'>About Us</div>
                 <div className='font-oswald font-bold text-h2  pt-lengthSm2 text-center text-wrap'>'Onirban' is a Bangla word which means an inextinguishable flame.
                     Deep down, we all have a fire that fuels us, but sometimes we need a little ignition to light that flame.
@@ -19,8 +28,9 @@ const AboutUs = () => {
                 <div className='font-oswald font-bold text-h2 text-center pt-lengthSm2'>
                     Your Startup. Supercharged.
                 </div>
+                <div className='flex  justify-center gap-lengthMd3 p-lengthMd2'><CallToAction /></div>
             </section>
-            <CallToAction />
+
         </>
     )
 }

@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
+import Navbar from "./components/navbar/page";
+import Footer from "./components/footer/page";
+
+
 
 export const metadata: Metadata = {
   title: "Digital Product Services",
-  description: "Build App Workshop Problem Solving",
+  description: "Build Web Applications Workshop Problem Solving",
 };
 
 export default function RootLayout({
@@ -18,15 +18,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+
+      <body className=" min-w-full w-fit">
+        <Navbar />
         <div className=" bg-gradient-to-r from-gray-100  to-cyan-100...">
-          <Navbar />
+
           <div className="flex  flex-row  justify-between  px-lengthLg3 py-lengthLg3">
             {children}
           </div>
-          <Footer />
-        </div>
 
+        </div>
+        <Footer />
 
       </body>
     </html>
