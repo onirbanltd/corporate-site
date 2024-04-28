@@ -1,6 +1,7 @@
 import React from 'react'
-import CallToAction from '../CallToAction';
+import CallToAction from '../../CallToAction';
 import Brain from "../brain/brain"
+import Link from 'next/link';
 
 const Hero = () => {
     return (
@@ -13,8 +14,9 @@ const Hero = () => {
                     </p>
                 </div>
 
-                <div className='flex w-full flex-row justify-center  pt-lengthSm2'>
+                <div className='flex w-full justify-center gap-lengthSm3 pt-lengthSm2'>
                     <CallToAction></CallToAction>
+                    <Link href="/components/services" className=' text-caribbean font-roboto font-bold  m-lengthLg2'>See Services</Link>
 
                 </div>
             </section>

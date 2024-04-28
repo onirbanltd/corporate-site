@@ -11,9 +11,9 @@ import Tiktok from "../../../public/social-icons/tiktok.svg"
 const Footer = () => {
     const year = new Date();
     return (
-        <section className=" bg-purple">
-            <div className="pt-[80px] pb[40px]]">
-                <div className="flex items-center justify-start gap-x-[12px]">
+        <section className=" bg-purple w-full">
+            <div className=" pt-lengthLg3">
+                <div className="flex items-center justify-start gap-x-lengthSm3">
                     <Image src={Logo} alt="Logo" height={80} width={120}></Image>
                 </div>
                 <div className="flex flex-row justify-center gap-x-[12px]">

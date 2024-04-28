@@ -4,7 +4,8 @@ import Link from "next/link";
 import Hero from "./components/hero/page"
 import OurServices from "./components/services/page"
 import Trends from "./components/trends/page"
-import AboutUs from "./components/about/page";
+import AboutUs from "./components/about-us/page";
+
 
 
 export default function Home() {
@@ -13,7 +14,6 @@ export default function Home() {
       <Hero />
       <Trends />
       <OurServices />
-      <AboutUs />
     </main></>
   )
 }
