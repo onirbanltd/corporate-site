@@ -58,7 +58,7 @@ const OurServices = () => {
                         </div>
                         <div>
                             <p className='text-h4 font-roboto text-wrap'>
-                                Keep the momentum going. We help you create a clear roadmap for business growth, ensuring your "inner fire" continues to propel you forward. We also guide you through regular retrospectives (reviews) to learn from successes and failures, constantly optimizing your path to success.
+                                Keep the momentum going. We help you create a clear roadmap for business growth, ensuring your inner fire continues to propel you forward. We also guide you through regular retrospectives (reviews) to learn from successes and failures, constantly optimizing your path to success.
                             </p>
                             <ul className='text-h3 font-roboto font-bold'>Benefits:
                                 <li className=' text-h4 font-roboto '><span className='font-bold'>Focus & Growth: </span>Create a clear roadmap and optimize for continuous improvement.

@@ -17,7 +17,7 @@ const AboutUs = () => {
             <section className='px-lengthMd3 py-lengthMd3'>
 
                 <div className=' font-oswald font-bold text-h1 p-lengthLg1 text-center'>About Us</div>
-                <div className='font-oswald font-bold text-h2  pt-lengthSm2 text-center text-wrap'>'Onirban' is a Bangla word which means an inextinguishable flame.
+                <div className='font-oswald font-bold text-h2  pt-lengthSm2 text-center text-wrap'> &lsquo;Onirban&lsquo; is a Bangla word which means an inextinguishable flame.
                     Deep down, we all have a fire that fuels us, but sometimes we need a little ignition to light that flame.
                     <br />Let us be your match and set your passions ablaze.</div>
 
