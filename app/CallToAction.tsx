@@ -3,7 +3,7 @@ import React from 'react'
 import { useState } from 'react'
 import ContactForm from './ContactForm'
 import { Client } from 'undici-types'
-
+import CalendlyEmbed from './components/CalendlyEmbed'
 const CallToAction = () => {
     const [showContactForm, setShowContactForm] = useState(false);
     const displayContactForm = () => {
@@ -19,7 +19,9 @@ const CallToAction = () => {
                 </div>)}
             <div>
                 {showContactForm && <ContactForm />}
+
             </div>
+            {/* <div> <CalendlyEmbed url="https://calendly.com/onirbanltd/30min" /></div> */}
         </>
     )
 }
