@@ -15,7 +15,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "18.11.3",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "daisyui": "^4.10.2",

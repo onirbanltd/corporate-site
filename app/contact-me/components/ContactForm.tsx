@@ -1,35 +1,39 @@
 
 "use client"
 import React from 'react'
+import { useState } from 'react';
 
-async function passData(event: any) {
-    event.preventDefault();
-    const contactData = {
-        email: String(event.target.email.value),
-        company: String(event.target.company.value),
-        contactName: String(event.target.yourname.value),
-        message: String(event.target.message.value),
 
-    };
-    try {
-        const response = await fetch('/api/contact', {
-            method: 'POST',
-            body: JSON.stringify(contactData),
-            headers: {
-                "Content-Type": "application/json"
-            }
-        })
-        if (!response.ok) {
-            throw new Error("HTTP Error! status" + response.status)
-        }
-    } catch (error) {
-        console.error("Error sending contact data:", error);
-    }
-    console.log(contactData);
 
-}
+
 const ContactForm = () => {
+    const [isMessageSent, setMessageSent] = useState<boolean>(false);
+    async function passData(event: any) {
+        event.preventDefault();
+        const contactData = {
+            email: String(event.target.email.value),
+            company: String(event.target.company.value),
+            contactName: String(event.target.yourname.value),
+            message: String(event.target.message.value),
 
+        };
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                body: JSON.stringify(contactData),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            if (!response.ok) {
+                throw new Error("HTTP Error! status" + response.status)
+            }
+        } catch (error) {
+            console.error("Error sending contact data:", error);
+        }
+        console.log(contactData);
+
+    }
     return (<>
 
         <form onSubmit={passData} className=' w-2/3 p-lengthMd2 font-roboto text-h4 '>
@@ -48,7 +52,7 @@ const ContactForm = () => {
             </div>
 
         </form>
-
+        {isMessageSent && <p>Thank you for your message. We will get back to you shortly!</p>}
     </>
     )
 }

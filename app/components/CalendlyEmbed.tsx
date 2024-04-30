@@ -1,38 +1,45 @@
-"use client"
-import React, { useState, useEffect } from "react";
-import { useExternalScript } from "./useExternalScript";
+import React from "react";
+import { useState, useEffect } from "react";
 
-const CalendlyEmbed = ({ url }: { url: string }) => {
+export async function getStaticProps() {
+    const scriptContent = await fetch('https://assets.calendly.com/assets/external/widget.js').then(res => res.text());
 
-    const isScriptLoaded = useExternalScript(
-        "https://assets.calendly.com/assets/external/widget.js"
-    )
+    return {
+        props: {
+            scriptContent,
+        },
+    };
+}
+interface CalendlyEmbedProps {
+    url: string;
+    scriptContent?: string; // Optional prop for server-side rendered script
+}
+
+const CalendlyEmbed: React.FC<CalendlyEmbedProps> = ({ url, scriptContent }) => {
     const [hasError, setHasError] = useState(false);
-    useEffect(() => {
-        if (!isScriptLoaded) {
 
-            const timeout = setTimeout(() => setHasError(true), 10000);
-            return () => clearTimeout(timeout);
+    useEffect(() => {
+        if (!scriptContent) {
+            // Handle case where scriptContent is not available (optional)
+            console.error("Script content not provided for Calendly embed");
+            setHasError(true);
         }
-    }, [isScriptLoaded]);
+    }, [scriptContent]);
 
     if (hasError) {
         return <div>Error loading Calendly widget. Please try again later.</div>;
     }
 
-    if (!isScriptLoaded) {
-        return <div>Please wait for Calendly to be loaded...</div>;
+    if (!scriptContent) {
+        return null; // Or display a loading message
     }
-
 
     return (
         <>
-
-            <div className="calendly-inline-widget" data-url={url}
-            ></div>
-
+            <script dangerouslySetInnerHTML={{ __html: scriptContent }} />
+            <div className="calendly-inline-widget" data-url={url}></div>
         </>
-    )
+    );
+};
 
-}
 export default CalendlyEmbed;
