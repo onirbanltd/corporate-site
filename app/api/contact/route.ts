@@ -1,8 +1,10 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
+
+
 const fs = require('fs');
 const path = require('path')
 
-export async function POST(request: any) {
+export async function POST(request: NextRequest) {
     const data = await request.json();
     const filepPath = path.resolve(process.cwd(), "app/data/submission.json");
 
@@ -29,7 +31,7 @@ export async function POST(request: any) {
     }
 
     return NextResponse.json({
-        data: DataTransfer,
+        data: data,
         message: "This message has been successfully sent."
     })
 }
