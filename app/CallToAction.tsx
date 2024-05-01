@@ -1,8 +1,8 @@
 "use client"
 import React from 'react'
 import { useState } from 'react'
-import ContactForm from './contact-me/components/ContactForm'
-import CalendlyEmbed from './components/CalendlyEmbed'
+import ContactForm from './components/contact-us/components/ContactForm'
+
 const CallToAction = () => {
     const [showContactForm, setShowContactForm] = useState(false);
     const displayContactForm = () => {
