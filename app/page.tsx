@@ -4,7 +4,7 @@ import Link from "next/link";
 import Hero from "./components/hero/page"
 import OurServices from "./components/services/page"
 import Trends from "./components/trends/page"
-import AboutUs from "./components/about-us/page";
+import ContactUS from "./components/contact-us/page";
 
 
 
@@ -14,6 +14,7 @@ export default function Home() {
       <Hero />
       <Trends />
       <OurServices />
+      <ContactUS />
     </main></>
   )
 }

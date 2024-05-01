@@ -6,10 +6,12 @@ import Link from 'next/link';
 import Logo from "../../../public/Onirban8.png"
 import Hero from '../hero/page';
 
+
 const link = [
     { id: 1, url: "/", title: "Home" },
     { id: 2, url: "/components/about-us", title: "About Us" },
     { id: 3, url: "/components/services", title: "Our Services" },
+    { id: 4, url: "/components/contact-us", title: "Contact Us" }
 ];
 const Navbar = () => {
 
