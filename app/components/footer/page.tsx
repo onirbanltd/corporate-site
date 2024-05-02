@@ -15,17 +15,17 @@ const Footer = () => {
         <section className=" bg-purple w-full">
             <div className=" pt-lengthLg3">
                 <div className="flex items-center justify-start gap-x-lengthSm3">
-                    <Image src={Logo} alt="Logo" height={80} width={120}></Image>
+                    <Image src={Logo} alt="Logo" height={80} width={120} />
                 </div>
                 <div className="flex flex-row justify-center gap-x-[12px]">
                     <Link href="https://www.linkedin.com/company/onirban-ltd?viewAsMember=true">
-                        <Image key={Linkedin} src={Linkedin} alt="linkedin logo" height={28} width={28}></Image>
+                        <Image key={Linkedin} src={Linkedin} alt="linkedin logo" height={28} width={28} />
                     </Link>
                     <Link href="https://www.instagram.com/onirbanltd">
-                        <Image key={Insta} src={Insta} alt="Instagram logo" height={28} width={28}> </Image>
+                        <Image key={Insta} src={Insta} alt="Instagram logo" height={28} width={28} />
                     </Link>
-                    <Image key={X} src={X} alt="X logo" height={28} width={28}></Image>
-                    <Image key={Tiktok} src={Tiktok} alt="Tiktok logo" height={28} width={28}></Image>
+                    {/* <Image key={X} src={X} alt="X logo" height={28} width={28}></Image>
+                    <Image key={Tiktok} src={Tiktok} alt="Tiktok logo" height={28} width={28}></Image> */}
 
 
 
