@@ -1,7 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 
 const contactSchema = new Schema({
-
     email: {
         type: String,
         required: [true, "Email is required."],
@@ -22,7 +21,6 @@ const contactSchema = new Schema({
         minLength: [2, "Contact Name must be larger than 2 characters"],
         maxLength: [50, "Contact Name must be lesser than 50 characters"],
     },
-
     message: {
         type: String,
         required: [true, "Message is required."],

@@ -42,6 +42,8 @@ const ContactForm = () => {
             setCompany("");
             setCompany("");
             setMessage("");
+            // console.log(res);
+
         }
     };
 
@@ -52,13 +54,13 @@ const ContactForm = () => {
                 <form onSubmit={handleSubmit} className=' w-full p-lengthMd2 font-roboto text-h4 '>
                     <div className='flex justify-start gap-lengthSm3 pt-lengthSm3 font-roboto font-semibold text-caribbean'>
                         <label htmlFor="email">Email</label>
-                        <input onChange={(e) => setEmail(e.target.value)} className='border border-gray-300 px-2 py-1 rounded w-full' type="email" name="email" id="email" value={email} /></div>
+                        <input onChange={(e) => setEmail(e.target.value)} className='border border-gray-300 px-2 py-1 rounded w-full' type="emtextail" name="email" id="email" value={email} /></div>
                     <div className='flex justify-around gap-lengthSm3  pt-lengthSm font-roboto font-semibold text-caribbean'><label htmlFor="company">Company name</label>
                         <input onChange={(e) => setCompany(e.target.value)} className='border border-gray-300 px-2 py-1 rounded w-full gap-lengthSm3' type="text" name="company" id="company" />
                         <label htmlFor="name">Contact name</label>
                         <input onChange={(e) => setContactName(e.target.value)} className='border border-gray-300 px-2 py-1 rounded w-full' type="text" name="yourname" id="yourname" value={contactName} /></div>
                     <div className='gap-lengthSm3 pt-lengthSm font-roboto font-semibold text-caribbean'><label htmlFor="message">Tell us about your project</label>
-                        <textarea onChange={(e) => setMessage(e.target.value)} className='border border-gray-300 px-2 py-1 rounded w-full' name="message" id="message" maxLength={3000} rows={4} value={message} /></div>
+                        <textarea onChange={(e) => setMessage(e.target.value)} className='border border-gray-300 px-2 py-1 rounded w-full' name="message" id="message" value={message} /></div>
 
 
                     <div className='flex justify-center fill-caribbean'>
