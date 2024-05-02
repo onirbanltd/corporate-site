@@ -20,7 +20,7 @@ const CallToAction = () => {
                 {showContactForm && <ContactForm />}
 
             </div>
-            {/* <div> <CalendlyEmbed url="https://calendly.com/onirbanltd/30min" /></div> */}
+
         </>
     )
 }
