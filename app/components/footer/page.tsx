@@ -6,6 +6,7 @@ import Logo from "../../../public/Onirban8.png"
 import Linkedin from "../../../public/social-icons/li.svg"
 import X from "../../../public/social-icons/x.svg"
 import Tiktok from "../../../public/social-icons/tiktok.svg"
+import Insta from "../../../public/social-icons/insta.svg"
 
 
 const Footer = () => {
@@ -17,8 +18,11 @@ const Footer = () => {
                     <Image src={Logo} alt="Logo" height={80} width={120}></Image>
                 </div>
                 <div className="flex flex-row justify-center gap-x-[12px]">
-                    <Link href="https://www.linkedin.com/company/onirban-ltd">
+                    <Link href="https://www.linkedin.com/company/onirban-ltd?viewAsMember=true">
                         <Image key={Linkedin} src={Linkedin} alt="linkedin logo" height={28} width={28}></Image>
+                    </Link>
+                    <Link href="https://www.instagram.com/onirbanltd">
+                        <Image key={Insta} src={Insta} alt="Instagram logo" height={28} width={28}> </Image>
                     </Link>
                     <Image key={X} src={X} alt="X logo" height={28} width={28}></Image>
                     <Image key={Tiktok} src={Tiktok} alt="Tiktok logo" height={28} width={28}></Image>
