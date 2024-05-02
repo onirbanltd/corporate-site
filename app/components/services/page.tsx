@@ -24,6 +24,9 @@ const OurServices = () => {
                             <ul className='text-h3 font-roboto font-bold'>Benefits:
                                 <li className=' text-h4 font-roboto '><span className='font-bold'>Reduced Risk: </span>Validate your product idea before investing heavily.
                                 </li></ul>
+                            <ul className='text-h3 font-roboto font-bold'>What We Do:
+                                <li className=' text-h4 font-roboto '><span className='font-bold'>Test Business Ideas with Real Customers. </span>
+                                </li></ul>
                         </div>
 
                     </div>
@@ -44,6 +47,9 @@ const OurServices = () => {
                             <ul className='text-h3 font-roboto font-bold'>Benefits:
                                 <li className=' text-h4 font-roboto '><span className='font-bold'>Speed to Market: </span>Get your MVP launched quickly and efficiently.
                                 </li></ul>
+                            <ul className='text-h3 font-roboto font-bold'>What We Do:
+                                <li className=' text-h4 font-roboto '><span className='font-bold'>Build Real Interactive Web applications and eCommerce sites. </span>
+                                </li></ul>
                         </div>
 
 
@@ -62,6 +68,9 @@ const OurServices = () => {
                             </p>
                             <ul className='text-h3 font-roboto font-bold'>Benefits:
                                 <li className=' text-h4 font-roboto '><span className='font-bold'>Focus & Growth: </span>Create a clear roadmap and optimize for continuous improvement.
+                                </li></ul>
+                            <ul className='text-h3 font-roboto font-bold'>What We Do:
+                                <li className=' text-h4 font-roboto '><span className='font-bold'>Create a Plan for your Business Growth. </span>
                                 </li></ul>
                         </div>
                     </div>
