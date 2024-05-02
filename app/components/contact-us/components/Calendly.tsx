@@ -15,7 +15,8 @@ export default function Calendly() {
         onEventScheduled: (e) => console.log(e.data.payload),
     });
     return (
-        <div>
+        <div className='w-1/2 p-lengthMd2 '>
+            <h2 className='font-roboto text-h2 text-purple  pt-lengthSm2 text-center'>Book a 30 mins call <br /></h2>
             <InlineWidget
                 url="https://calendly.com/onirbanltd/30min" />
         </div>
