@@ -44,8 +44,8 @@ const Navbar = () => {
                         </div>
                         <ul tabIndex={0} className="menu menu-md dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
                             {link.map(link => (
-                                <li className=' flex flex-nowrap'>
-                                    <Link href={link.url} key={link.title}>{link.title}</Link>
+                                <li key={link.id} className=' flex flex-nowrap'>
+                                    <Link href={link.url} key={link.id}>{link.title}</Link>
                                 </li>))}
 
                         </ul>
