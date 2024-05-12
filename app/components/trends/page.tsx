@@ -1,4 +1,5 @@
 import React from "react";
+import CallToAction from "@/app/CallToAction";
 
 const Trends = () => {
 
@@ -28,9 +29,9 @@ const Trends = () => {
                     </div>
 
                 </div>
-                <div className='font-roboto text-h3 text-purple text-center pt-lengthSm2 text-wrap'>
+                <div className='font-roboto text-h3 text-purple dark:text-sand text-center pt-lengthSm2 text-wrap'>
                     Tired of the startup struggle? 60% fail within 5 years. But not you. We will rewrite your story. Challenges become steppingstones.
-                    <br /> Let us dominate the market together. Learn More!
+                    <br /> Let us dominate the market together. <CallToAction />
                 </div>
 
             </section>
