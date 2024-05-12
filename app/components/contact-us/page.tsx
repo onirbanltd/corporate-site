@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import ContactForm from './components/ContactForm'
+import ContactForm from '../ContactForm'
 import Brain from '../brain/brain'
 import Calendly from './components/Calendly'
 const ContactUS = () => {
