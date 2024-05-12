@@ -6,7 +6,7 @@ const OurServices = () => {
         <>
 
             <section className=" p-lengthLg3">
-                <div className='grid row-3 px-lengthmd2 text-h1 font-oswald' >
+                <div className='grid gap-4md:grid-cols-2 px-lengthmd2 text-h1 font-oswald' >
                     <h1 className=' text-center'>3 Stages to Startup Success. Let Us Find Yours.
                     </h1>
                     <div className='grid grid-cols-2 gap-2  p-lengthLg1'>

@@ -4,16 +4,12 @@ import Hero from "./components/hero/page"
 import OurServices from "./components/services/page"
 import Trends from "./components/trends/page"
 
-
-
-
 export default function Home() {
   return (
     <><main>
       <Hero />
       <Trends />
       <OurServices />
-      {/* <ContactUS /> */}
     </main></>
   )
 }

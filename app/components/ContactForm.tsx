@@ -3,13 +3,14 @@
 
 import { useState } from "react";
 
+
 const ContactForm = () => {
 
     const [email, setEmail] = useState("");
     const [company, setCompany] = useState("");
     const [contactName, setContactName] = useState("");
     const [message, setMessage] = useState("");
-    const [error, setError] = useState(null);
+    const [error, setError] = useState({});
     const [success, setSuccess] = useState(false);
 
     const handleSubmit = async (e: any) => {
@@ -22,30 +23,25 @@ const ContactForm = () => {
 
         const res = await fetch("api/contact", {
             method: "POST",
-            headers: {
-                "Content-type": "application/json",
-            },
+            headers: { "Content-type": "application/json" },
             body: JSON.stringify({
                 email,
                 company,
                 contactName,
                 message,
-            }),
+            })
         });
-
-        const { msg, success } = await res.json();
+        const { msg } = await res.json()
         setError(msg);
         setSuccess(success);
-
         if (success) {
+
             setEmail("");
             setCompany("");
-            setCompany("");
+            setContactName("");
             setMessage("");
-            // console.log(res);
-
         }
-    };
+    }
 
 
     return (
@@ -71,15 +67,8 @@ const ContactForm = () => {
 
                 </form>
             </div>
-            <div className="flex flex-col">{error && (
-                <div
-                    className={`${success ? "text-green-800" : "text-red-600"
-                        } px-5 py-2`}
-                >
-                    {error}</div>
 
-            )}
-            </div>
+
         </>
     )
 }
