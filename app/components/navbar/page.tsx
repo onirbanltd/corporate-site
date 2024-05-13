@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Logo from "../../../public/Onirban8.png"
 import Calendly from '../contact-us/components/Calendly';
-
+import { sendGTMEvent } from "@next/third-parties/google";
 
 const link = [
     { id: 1, url: "/", title: "Home" },
@@ -18,7 +18,8 @@ const link = [
 const Navbar = () => {
     const [showCalendly, setShowCalendly] = useState(false);
     const calendlyLink = () => {
-        setShowCalendly(true);
+        setShowCalendly(true)
+        sendGTMEvent({ event: "buttonClicked", value: 'TJ6052SX5D' })
     }
     return (
         <>
@@ -29,10 +30,10 @@ const Navbar = () => {
 
                 </div>
                 <div><button role="button" className='btn bg-caribbean text-sand' onClick={calendlyLink}>Book a Call</button></div>
-                <div className="navbar-center hidden xl:block">
+                <div className="navbar-center hidden xl:block text-nowrap">
 
                     {link.map(link => (
-                        <Link href={link.url} key={link.id} className=" flex-row  justify-between  px-lengthSm3"  >{link.title}</Link>
+                        <Link href={link.url} key={link.id} className=" flex-row  justify-between"  >{link.title}</Link>
                     ))}
                 </div>
 
