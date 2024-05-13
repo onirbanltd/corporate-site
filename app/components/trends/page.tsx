@@ -1,11 +1,11 @@
 import React from "react";
 import CallToAction from "@/app/CallToAction";
-
+import { GoogleAnalytics } from "@next/third-parties/google";
 const Trends = () => {
 
 
     return (
-        <>
+        <><GoogleAnalytics gaId="G-TJ6052SX5D" />
             <section className=" p-lengthLg3 ">
                 <div className=" text-h1 font-oswald text-center">UK Startup trend for last the 5 years</div>
                 <div className="stats shadow flex justify-between">
