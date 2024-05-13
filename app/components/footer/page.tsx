@@ -31,7 +31,7 @@ const Footer = () => {
 
                 </div>
                 <div>
-                    <p className=" font-roboto text-center text-h4 pt-[56px] text-champagne">{year.getFullYear()} © All Rights Reserved - Onirban Ltd</p>
+                    <p className=" font-roboto text-center text-h3 pt-[56px] text-champagne">{year.getFullYear()} © Onirban Ltd. All Rights Reserved</p>
                 </div>
             </div>
         </section>
