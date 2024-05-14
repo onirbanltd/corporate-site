@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from "../../../public/Onirban8.png"
+import Logo from "../../../public/Onirban8.svg"
 import Calendly from '../contact-us/components/Calendly';
 import { sendGTMEvent } from "@next/third-parties/google";
 
