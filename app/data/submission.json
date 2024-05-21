@@ -1,0 +1,32 @@
+[
+  {
+    "email": "sz@gmail.com",
+    "company": "amazon",
+    "contactName": "jeff",
+    "message": "sds"
+  },
+  {
+    "email": "sz@gmail.com",
+    "company": "wew",
+    "contactName": "ewe",
+    "message": "wew"
+  },
+  {
+    "email": "work@gmail.com",
+    "company": "fer",
+    "contactName": "rere",
+    "message": "rere"
+  },
+  {
+    "email": "doesitwork@gmail.com",
+    "company": "ere",
+    "contactName": "re",
+    "message": "rere"
+  },
+  {
+    "email": "test@gmail.coom",
+    "company": "fewr",
+    "contactName": "ewr",
+    "message": "erw"
+  }
+]
