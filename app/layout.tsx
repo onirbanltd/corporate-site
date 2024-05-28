@@ -7,6 +7,7 @@ import Footer from "./components/footer/page";
 
 
 
+
 export const metadata: Metadata = {
   title: "Digital Product Services",
   description: "Build Web Applications Workshop Problem Solving",
@@ -22,9 +23,10 @@ export default function RootLayout({
 
       <body className=" min-w-full w-fit">
         <Navbar />
+
         <div className=" bg-gradient-to-r from-gray-100  to-cyan-100...">
 
-          <div className="flex  flex-row  justify-between  px-lengthLg3 py-lengthLg3">
+          <div className="flex  flex-row  justify-between  p-lengthLg3  dark:text-sand">
             {children}
           </div>
 

@@ -16,7 +16,7 @@ const CallToAction = () => {
 
             {!showContactForm && (
                 <div className=' flex  justify-center gap-lengthMd3 p-lengthMd2'>
-                    <button className="btn bg-purple text-sand" onClick={displayContactForm}>Contact Us</button>
+                    <button className="btn bg-purple text-sand dark:bg-caribbean dark:text-sand}" onClick={displayContactForm}>Contact Us</button>
 
                 </div>)}
             <div>
