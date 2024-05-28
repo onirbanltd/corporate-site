@@ -1,0 +1,62 @@
+{
+    "services": [
+        {
+            "stage": 1,
+            "title": "Fuel Your Idea",
+            "image": [
+                "/icons8-fuel-64.png",
+                "Fuel Tank",
+                "/service/fuelidea.jpeg",
+                "Brain Storming"
+            ],
+            "whatWeDo": [
+                "Product Development Workshops",
+                "Brainstorming sessions",
+                "User Journey Mappings"
+            ],
+            "why": "Unleash your inner innovator. One challenge startups face is not lack of ideas, there are too many! Our intensive 2-week design sprints help you isolate and validate product ideas, prototype quickly, and test them with real users. This ensures you are building something customers want and love.",
+            "benefitsTitle": "Reduced Risk",
+            "benefitsDescription": "Validate your product idea before investing heavily.",
+            "purpose": "Gain deeper understanding of your market and the problem you are trying to solve."
+        },
+        {
+            "stage": 2,
+            "title": "Oxygenate Your Growth",
+            "image": [
+                "/icons8-oxygen-64.png",
+                "Plant growing",
+                "/service/launchproduct.jpeg",
+                "papers convert to paper swan"
+            ],
+            "whatWeDo": [
+                "Interactive Web Application Development",
+                "Search Engine Optimisation",
+                "Data Driven Development",
+                "Better User Experience Website Development using latest tech stack"
+            ],
+            "why": "Building a product can be extremely expensive and time-consuming, if not done right. Get your MVP (minimum viable product) to market quickly. We build user-friendly web applications that solve specific problems for your startup, allowing you to iterate and gain traction faster. (Time is money, after all!)",
+            "benefitsTitle": "Speed to Market",
+            "benefitsDescription": "Get your Minimum Viable Product launched to the market quickly and efficiently.",
+            "purpose": "Get customers to use your products and generate revenue."
+        },
+        {
+            "stage": 3,
+            "title": "Ignite Your Expansion",
+            "image": [
+                "/icons8-rocket-64.png",
+                "Rocket launching",
+                "/service/roadmap.jpeg",
+                "many origamis of swans"
+            ],
+            "whatWeDo": [
+                "Create Roadmap",
+                "Build new Teams",
+                "Embed Culture of Continous Learning and Growing"
+            ],
+            "why": "Keep the momentum going. We help you create a clear roadmap for business growth, ensuring your inner fire continues to propel you forward. We also guide you through regular retrospectives (reviews) to learn from successes and failures, constantly optimizing your path to success.",
+            "benefitsTitle": "Focus & Growth",
+            "benefitsDescription": "Help you grow your business at a sustainable pace.",
+            "purpose": "Drive sustainable Business Growth."
+        }
+    ]
+}

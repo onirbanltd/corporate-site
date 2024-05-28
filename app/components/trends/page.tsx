@@ -11,7 +11,7 @@ const Trends = () => {
                 <div className="stats shadow flex justify-between">
 
                     <div className="stat place-items-center">
-                        <div className="font-roboto font-h3 text-pretty">Startups Launched</div>
+                        <div className="font-roboto text-h3 text-pretty">Startups Launched</div>
                         <div className="stat-value">360,651</div>
 
                     </div>
