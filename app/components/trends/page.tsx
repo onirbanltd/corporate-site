@@ -6,7 +6,7 @@ const Trends = () => {
 
     return (
         <><GoogleAnalytics gaId="G-TJ6052SX5D" />
-            <section className=" p-lengthLg3 ">
+            <section className=" p-lengthLg3 dark:text-champagne">
                 <div className=" text-h1 font-oswald text-center">UK Startup trend for last the 5 years</div>
                 <div className="stats shadow flex justify-between">
 

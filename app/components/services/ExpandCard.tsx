@@ -19,7 +19,7 @@ const ExpandCard: React.FC<Service> = (details) => {
 
     return (
         <>
-            <div className="w-full card lg:card-side bg-base-100 shadow-xl font-roboto text-purple">
+            <div className="w-full card lg:card-side bg-base-100 shadow-xl font-roboto text-purple dark:text-champagne">
                 <figure className="w-full"><Image src={details.image[2]} alt={details.image[3]} width={500} height={500} /></figure>
                 <div className="card-body ">
                     <h2 className="card-title text-h2">{details.title}</h2>

@@ -49,7 +49,7 @@ const ContactForm = () => {
             <div>
 
                 <form onSubmit={handleSubmit} className=' w-1/2 p-lengthMd2 font-roboto text-h4 '>
-                    <h2 className='font-roboto text-h2 text-purple  pt-lengthSm2 text-center'>Send us a message <br /></h2>
+                    <h2 className='font-roboto text-h2 text-purple  pt-lengthSm2 text-center dark:text-sand'>Send us a message <br /></h2>
                     <div className='flex justify-start gap-lengthSm3 pt-lengthSm3 font-roboto font-semibold text-caribbean'>
                         <label htmlFor="email">Email</label>
                         <input onChange={(e) => setEmail(e.target.value)} className='border border-gray-300 px-2 py-1 rounded w-full' type="emtextail" name="email" id="email" value={email} /></div>

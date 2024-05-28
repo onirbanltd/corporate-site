@@ -30,10 +30,10 @@ const Navbar = () => {
 
                 </div>
                 <div><button role="button" className='btn bg-caribbean text-sand' onClick={calendlyLink}>Book a Call</button></div>
-                <div className="navbar-center hidden xl:block text-nowrap">
+                <div className="navbar-center hidden xl:flex space-x-4">
 
                     {link.map(link => (
-                        <Link href={link.url} key={link.id} className=" flex-row  justify-between"  >{link.title}</Link>
+                        <Link href={link.url} key={link.id} className=" flex-row  justify-between whitespace-nowrap"  >{link.title}</Link>
                     ))}
                 </div>
 
