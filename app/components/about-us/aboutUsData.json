@@ -1,0 +1,48 @@
+{
+    "aboutUsData": [
+        {
+            "tag": "Let's Build Something Customers Love: Ignite Your Startup Journey with Onirban.",
+            "mission": "Our mission? To help you create products and experiences that customers not only use, but absolutely love. At Onirban, we believe the key to success lies in understanding both business and user needs."
+        },
+        {
+            "who": [
+                "Onirban, meaning 'inextinguishable flame' in Bangla, embodies our passion for igniting innovation in ambitious startups. We're a team of experienced product builders with over 16 years of expertise in helping small and medium-sized companies achieve market advantage."
+            ]
+        },
+        {
+            "what": [
+                "We understand the challenges startups face in today's competitive landscape. We specialize in helping you:"
+            ]
+        },
+        {
+            "how": [
+                {
+                    "title": "Validate Your Ideas",
+                    "description": "Through rapid prototyping and user research, we ensure your product aligns with market needs before significant investment."
+                },
+                {
+                    "title": "Build Quickly",
+                    "description": "We use rapid development frameworks to deliver essential features and functionalities using latest tech stack at our arsenal."
+                },
+                {
+                    "title": "Optimise for Growth",
+                    "description": "We guide you in optimizing your product-market fit for sustainable and scalable growth."
+                },
+                {
+                    "title": "Maximise ROI",
+                    "description": "Our focus on efficient development practices ensures you get the most out of your budget."
+                }
+            ]
+        },
+        {
+            "choice": "We're not just another expensive consultancy. We become your dedicated partner, laser-focused on your success."
+        },
+        {
+            "values": [
+                "Aligned Outcomes",
+                "Data-Driven Growth",
+                "Continous Innovation"
+            ]
+        }
+    ]
+}
