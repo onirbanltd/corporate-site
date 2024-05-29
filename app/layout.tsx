@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-      <body className=" min-w-full w-fit">
+      <body className=" min-w-full  w-fit">
         <Navbar />
 
         <div className=" bg-gradient-to-r from-gray-100  to-cyan-100...">

@@ -23,7 +23,7 @@ const OurServices = () => {
                 </div>
 
 
-                <div className='p-lengthLg2 content-center'>
+                <div className=' pt-lengthLg3  gap-lengthSm1 content-center'>
                     {serviceData.services.map((details) => (
                         <ExpandCard key={details.stage} {...details} />
                     ))}

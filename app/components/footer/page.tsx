@@ -13,7 +13,7 @@ const Footer = () => {
     const year = new Date();
     return (
         <section className=" bg-purple w-full">
-            <div className=" p-lengthLg3">
+            <div className=" p-lengthLg2">
                 <div className="flex items-center justify-start gap-x-lengthSm3">
                     <Image src={Logo} alt="Logo" height={80} width={120} />
                 </div>

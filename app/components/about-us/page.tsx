@@ -1,38 +1,54 @@
-import React from 'react'
-import Brain from '../brain/brain'
-import CallToAction from '../../CallToAction'
+import React from 'react';
+import Hero from '../hero/page'
+import CallToAction from '../../CallToAction';
+import aboutUs from './aboutUsData.json'
 
-const AboutUs = () => {
+interface Service {
+    tag: string;
+    mission: string;
+    who: string[];
+    what: string[];
+    how: { title: string; description: string }[];
+    choice: string;
+    values: string[];
+}
+
+const AboutUs: React.FC = () => {
+
+    const data = aboutUs.aboutUsData;
     return (
         <>
-            <section className=' p-lengthLg3 hidden xl:block  text-purple dark:text-sand'>
-                <div className=''>
-                    <h1 className='text-center text-h1 font-extrabold'>Spark Your Startup. Ignite Success.</h1>
-                    <p className='font-roboto text-h2 text-purple dark:text-sand pt-lengthSm2 text-center'>We are your secret weapon for a successful startup.
-                    </p>
-                </div>
+            <section className="dark:bg-gray-100 dark:text-gray-800">
+                <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
+                    <h1 className="mb-12 text-h1 font-oswald font-bold leading-none text-center ">About Us</h1>
+                    <Hero />
+                    <div className="divide-y dark:divide-gray-300 font-roboto">
+                        <div className="py-6 space-y-2 md:grid md:grid-cols-12 md:gap-8 md:space-y-0">
+                            <h3 className="font-semibold md:col-span-5">Who We Are:</h3>
+                            <p className="md:pl-0 md:col-span-7">{data[1].who}</p>
+                        </div>
+                        <div className="py-6 space-y-2 md:grid md:grid-cols-12 md:gap-8 md:space-y-0">
+                            <h3 className="font-semibold md:col-span-5">What We Do:</h3>
+                            <ul className="md:pl-0 md:col-span-7">{data[2].what}
+                                {data[3].how.map((list, index) =>
+                                    (<li className=' list-disc' key={index}>{list.title}: {list.description}</li>))}
 
+                            </ul>
+                        </div>
+                        <div className="py-6 space-y-2 md:grid md:grid-cols-12 md:gap-8 md:space-y-0">
+                            <h3 className="font-semibold md:col-span-5">Our Values</h3>
+                            <ul>
+                                {data[5].values.map((value, index) => (<li className="list-disc" key={index}>{value}</li>))}
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div>{data[4].choice}</div>
+                <div><CallToAction /></div>
             </section>
-            <section className='p-lengthLg3  justify-center hidden xl:flex'><Brain /></section>
-            <section className=' dark:text-sand'>
-
-                <div className=' font-oswald font-bold text-h1 p-lengthLg1 text-center '>About Us</div>
-                <div className='font-oswald font-bold text-h2  pt-lengthSm2 text-center text-wrap'> &lsquo;Onirban&lsquo; is a Bangla word which means an inextinguishable flame.
-                    Deep down, we all have a fire that fuels us, but sometimes we need a little ignition to light that flame.
-                    <br />Let us be your match and set your passions ablaze.</div>
-
-                <div className=' font-roboto text-wrap text-h3  pt-lengthMd3'>
-                    We empower ambitious startups in less than 5 years to outshine the noise. Slash costs, optimize product-market fit, and maximize ROI. Forget expensive consultancies. We are your dedicated partner, laser-focused on your success.
-                </div>
-
-                <div className='font-roboto font-bold text-h2 text-center pt-lengthMd3'>
-                    Your Startup. Supercharged.
-                </div>
-                <div className='flex  justify-center gap-lengthMd3 p-lengthMd2'><CallToAction /></div>
-            </section>
-
         </>
     )
 }
 
-export default AboutUs
+export default AboutUs;
