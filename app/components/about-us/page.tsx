@@ -68,10 +68,6 @@ const AboutUs: React.FC = () => {
                         <div className="w-full card lg:card-side bg-base-100 shadow-xl font-roboto text-purple dark:text-champagne">
                             <div className="card-body ">
                                 <h2 className="card-title text-h2">{choice}</h2>
-
-
-
-
                                 <div className="card-actions justify-start">
                                     <h2 className="card-title">Our values:
                                     </h2><br />
