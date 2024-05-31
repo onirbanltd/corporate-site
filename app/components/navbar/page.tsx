@@ -1,6 +1,6 @@
 "use client";
 import React from 'react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -16,14 +16,37 @@ const link = [
 ];
 
 const Navbar = () => {
+
+    const [header, setHeader] = useState(false);
+
+
+    const scrollHeader = () => {
+        if (window.scrollY >= 20) {
+            setHeader(true);
+        }
+        else {
+            setHeader(false);
+
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", scrollHeader);
+        return (
+            window.addEventListener("scroll", scrollHeader)
+
+        )
+    }, []);
     const [showCalendly, setShowCalendly] = useState(false);
+
     const calendlyLink = () => {
         setShowCalendly(true)
         sendGTMEvent({ event: "buttonClicked", value: 'TJ6052SX5D' })
     }
+
     return (
         <>
-            <nav className="flex px-lengthLg3 items-center justify-between navbar bg-base-100 sticky top-0 z-10">
+            <nav className={header ? "flex px-lengthLg3 items-center justify-between navbar bg-base-100  fixed top-0 z-10" : "bg-transparent flex px-lengthLg3 items-center justify-between navbar bg-base-100  fixed top-0 z-10"}>
 
                 <div className="flex items-center">
                     <Link href="/"><Image src={Logo} alt='Onirban Product Development logo' height={80} width={120} /></Link>

@@ -31,7 +31,7 @@ const AboutUs: React.FC = () => {
     return (
 
         <>
-            <section>
+            <section className='p-lengthLg3 dark:text-champagne"'>
                 <h1 className="font-oswald text-h1 text-center">About Us</h1>
 
                 {data && (

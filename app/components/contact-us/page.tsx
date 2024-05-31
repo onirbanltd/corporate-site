@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
-import ContactForm from '../ContactForm'
+import Image from 'next/image'
+// import ContactForm from '../ContactForm'
 import Brain from '../brain/brain'
 import Calendly from './components/Calendly'
 const ContactUS = () => {
@@ -14,20 +15,20 @@ const ContactUS = () => {
                     </p>
                 </div>
                 <div className='justify-center'>   <Brain /></div>
+                <div className="w-full card lg:card-side bg-base-100 shadow-xl font-roboto text-purple dark:text-champagne">
 
-
-                <div className='px-lengthMd3 py-lengthMd3 flex flex-row '>
-                    <div >
-
-                        <ContactForm />
+                    <figure className="w-1/2"><Image src="/service/nextsteps.jpeg" alt="Next steps for product development start up book call Onirban" width={500} height={500} /></figure>
+                    <div className="card-body justify-start ">
+                        <h2 className="card-title text-h2">Ready to Launch Your Startup Journey?
+                        </h2>
+                        <h3 className="text-h3  ">Schedule a free call to discuss your startup goals.</h3>
+                        <div id="__next"  >
+                            <Calendly />
+                        </div>
                     </div>
-
-                    <div id="__next" >
-
-                        <Calendly /></div>
-
-
                 </div>
+
+
             </section>
         </>
     )

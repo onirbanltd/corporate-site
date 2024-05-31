@@ -20,8 +20,8 @@ const OurServices = () => {
 
             <section className="p-lengthLg3 dark:text-champagne text-purple">
                 <div className="container text-center">
-                    <span className="font-oswald text-h1  text-center ">3 Stages to Startup Success.</span>
-                    <h2 className="font-oswald text-h2  text-center">Let Us Find Yours.</h2>
+                    <span className="font-oswald text-h1  text-center "> Startup Growth Journey to Success.</span>
+                    <h2 className="font-oswald text-h2 text-center">Let Us Find Yours.</h2>
                     <div className="grid gap-lengthLg3 lg:grid-cols-3">
                         {serviceData.services.map((service) => (
                             <ServiceCard key={service.stage} service={service} onClick={() => expandServiceCard(service.stage)} />
