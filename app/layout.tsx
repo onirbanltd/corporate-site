@@ -26,7 +26,7 @@ export default function RootLayout({
 
         <div className=" bg-gradient-to-r from-gray-100  to-cyan-100...">
 
-          <div className="flex  flex-row  justify-between  p-lengthLg3  dark:text-sand">
+          <div className="flex  flex-row  justify-between  p-lengthLg3 sm:p-lengthMd1  dark:text-sand">
             {children}
           </div>
 
