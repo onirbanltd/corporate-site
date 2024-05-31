@@ -1,5 +1,7 @@
+"use client"
 import React from "react";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 
 
 interface Service {
@@ -13,36 +15,43 @@ interface Service {
     purpose: string;
 }
 
+interface ExpandedCardProps {
+    service: Service;
+}
 
 
-const ExpandCard: React.FC<Service> = (details) => {
+const ExpandCard: React.FC<ExpandedCardProps> = (service) => {
 
     return (
         <>
-            <div className="w-full card lg:card-side bg-base-100 shadow-xl font-roboto text-purple dark:text-champagne">
-                <figure className="w-full"><Image src={details.image[2]} alt={details.image[3]} width={500} height={500} /></figure>
-                <div className="card-body ">
-                    <h2 className="card-title text-h2">{details.title}</h2>
-                    <h3 className="card-title">Why:</h3> <span className="text-h4">{details.why}</span>
+            <AnimatePresence>
+                <motion.div className="w-full card lg:card-side bg-base-100 shadow-xl font-roboto text-purple dark:text-champagne" layoutId={`card=${service.service.stage}`}>
+                    <motion.figure className="w-full"><Image src={service.service.image[2]} alt={service.service.image[3]} width={500} height={500} /></motion.figure>
+                    <motion.div className="card-body ">
+                        <motion.h2 className="card-title text-h2">{service.service.title}</motion.h2>
+                        <motion.h3 className="card-title">Why:</motion.h3> <span className="text-h4">{service.service.why}</span>
 
-                    <ol className=" list-inside"><span className="card-title">How we help:</span>
-                        {details.whatWeDo.map((item, index) => (
-                            <li className="text-h4 list-style-position: inside  px-lengthSm1 list-disc " key={index}>{item}</li>
+                        <motion.ol className=" list-inside"><span className="card-title">How we help:</span>
+                            {service.service.whatWeDo.map((item, index) => (
+                                <motion.li className="text-h4 list-style-position: inside  px-lengthSm1 list-disc " key={index}>{item}</motion.li>
 
 
-                        ))}
+                            ))}
 
-                    </ol>
+                        </motion.ol>
 
-                    <div className="card-actions justify-start">
-                        <h2 className="card-title">What it does for your business:
-                        </h2>
-                        <h3 className="text-h3 text-cyan">{details.benefitsTitle}</h3>
-                        <p>{details.benefitsDescription}</p>
-                        <p>We want to help you to: <span>{details.purpose}</span></p>
-                    </div>
-                </div>
-            </div >
+                        <motion.div className="card-actions justify-start">
+                            <motion.h2 className="card-title">What it does for your business:
+                            </motion.h2>
+                            <motion.h3 className="text-h3 text-cyan">{service.service.benefitsTitle}</motion.h3>
+                            <motion.p>{service.service.benefitsDescription}</motion.p>
+                            <motion.p>We want to help you to: <span>{service.service.purpose}</span></motion.p>
+                        </motion.div>
+                    </motion.div>
+
+
+                </motion.div>
+            </AnimatePresence>
 
 
         </>

@@ -65,28 +65,28 @@ const AboutUs: React.FC = () => {
 
                             </div>
                         </div >
-                        <div className="w-full card lg:card-side bg-base-100 shadow-xl font-roboto text-purple dark:text-champagne">
+                        {/* <div className="w-full card lg:card-side bg-base-100 shadow-xl font-roboto text-purple dark:text-champagne">
                             <div className="card-body ">
                                 <h2 className="card-title text-h2">{choice}</h2>
                                 <div className="card-actions justify-start">
                                     <h2 className="card-title">Our values:
                                     </h2><br />
 
-
+                                    
                                     <ol className=" list-inside">
                                         {values.map((value, index) => (
                                             <li className="text-h4 list-style-position: inside  px-lengthSm1 list-disc " key={index}>{value}</li>
 
 
-                                        ))}
+                                        ))} 
 
-                                    </ol>
+                                    </ol> 
 
 
                                 </div>
                             </div>
 
-                        </div>
+                        </div> */}
                         <div className="w-full card lg:card-side bg-base-100 shadow-xl font-roboto text-purple dark:text-champagne">
 
                             <figure className="w-full"><Image src="/service/nextsteps.jpeg" alt="Next steps for product development start up book call Onirban" width={500} height={500} /></figure>
