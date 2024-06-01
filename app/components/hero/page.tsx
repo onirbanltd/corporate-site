@@ -9,8 +9,8 @@ const Hero = () => {
             <section className='  p-lengthLg3 '>
                 <div className=' font-oswald   text-purple dark:text-champagne'>
                     <h1 className='text-center text-h1 font-extrabold'>Spark Your Startup. Ignite Success.</h1>
-                    <p className='font-roboto text-h2 text-purple dark:text-champagne  pt-lengthSm2 text-center'>We are your secret weapon for a successful startup. <br /> We build interactive Products to validate your  Ideas and concepts and turn them into user interactive applcations, fast! <br />With affordable packages and flexible solutions - we fit your needs. <br />Ignite your startup journey today!
-
+                    <p className='font-roboto text-h2 text-purple dark:text-champagne  pt-lengthSm2 text-center'>We are your secret weapon for a successful startup. <br /> We build interactive products to validate your ideas and concepts, turning them into user-interactive applications - fast! <br />
+                        With affordable packages and flexible solutions, we fit your needs. Ignite your startup journey today!
                     </p>
                 </div>
 
