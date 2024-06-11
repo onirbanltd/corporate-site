@@ -26,12 +26,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, onClick }) => {
         <>
 
             <motion.div className="w-full flex flex-col rounded-md text-purple dark:text-champagne border-caribbean border-2  p-lengthLg3 shadow cursor-pointer" onClick={onClick} layoutId={`card-${service.stage}`}>
-                <motion.div className="p-lengthSm1 flex  justify-center flex-shrink-0 w-20 h-20 items-center font-roboto text-h2  text-caribbean" >{service.stage}
+                <motion.div className="p-lengthSm1 flex  justify-center flex-shrink-0 w-10 h-10 items-center font-roboto text-h2  text-caribbean" >{service.stage}
                     <span><Image src={service.image[0]} alt={service.image[1]} width={50} height={50} /></span>
                 </motion.div>
-                <motion.p className="font-roboto text-h3 text-center  place-items-center">
+                <motion.p className="font-roboto font-semibold text-lg text-center  place-items-center">
                     <b>{service.title}.</b> <br />
-                    <span className="font-roboto text-h4" >{service.purpose}</span>
+                    <span className="font-roboto mt-lengthSm0 leading-relaxed text-md" >{service.purpose}</span>
 
                 </motion.p>
 
