@@ -41,9 +41,9 @@ const ExpandCard: React.FC<ExpandedCardProps> = (service) => {
                         </motion.ol>
 
                         <motion.div className="card-actions justify-start">
-                            <motion.h2 className="card-title">What it does for your business:
+                            <motion.h2 className="card-title">What it does for your business: <span className="text-h3  font-bold">{service.service.benefitsTitle}</span>
                             </motion.h2>
-                            <motion.h3 className="text-h3 text-cyan">{service.service.benefitsTitle}</motion.h3>
+
                             <motion.p>{service.service.benefitsDescription}</motion.p>
                             <motion.p>We want to help you to: <span>{service.service.purpose}</span></motion.p>
                         </motion.div>

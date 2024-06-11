@@ -31,30 +31,31 @@ const AboutUs: React.FC = () => {
     return (
 
         <>
-            <section className='p-lengthLg3 dark:text-champagne"'>
-                <h1 className="font-oswald text-h1 text-center">About Us</h1>
-
+            <section className='pt-lengthLg3 text-purple dark:text-champagne pb-lengthMd4 md:pt-lengthLg4 md:pb-lengthLg4 '>
+                <h1 className="font-oswald text-4xl lg:text-5xl font-bold lg:tracking-tight  text-center ">About Us</h1>
+                <p className='text-lg font-roboto mt-lengthSm0 text-center'>{tag}</p>
                 {data && (
                     <>
-                        <div className="w-full card lg:card-side bg-base-100 shadow-xl font-roboto text-purple dark:text-champagne">
-                            <figure className="w-full"><Image src="/service/mission.jpeg" alt="crafted boat with mission values purpose in wooden blocks" width={500} height={500} /></figure>
+                        <div className="w-full card card-compact lg:card-side bg-base-100 shadow-xl font-roboto text-purple dark:text-champagne">
+                            <figure className="w-full "><Image src="/service/mission.jpeg" alt="crafted boat with mission values purpose in wooden blocks" width={500} height={500} /></figure>
                             <div className="card-body ">
-                                <h2 className="card-title text-h2">{tag}</h2>
-                                <h3 className="card-title">Our Mission:</h3> <span className="text-h4">{mission}</span>
+
+                                <h3 className="card-title">Our Mission:</h3>
+                                <h4 className=" card-actions sm:text-sm md:text-lg font-roboto">{mission}</h4>
 
 
 
                                 <div className="card-actions justify-start">
-                                    <h2 className="card-title">Who We Are:
-                                    </h2>
-                                    <h3 className="text-h4  ">{who}</h3>
+                                    <h3 className="card-title">Who We Are:
+                                    </h3>
+                                    <h4 className="card-actions sm:text-sm md:text-lg font-roboto ">{who}</h4>
 
                                 </div>
                                 <div>
-                                    <h3 className='text-h4'> {what}</h3>
-                                    <ol className=" list-inside">
+                                    <h3 className='sm:text-sm md:text-lg font-semibold font-roboto '> {what}</h3>
+                                    <ol className=" card-body list-inside"><span className="card-title text-lg font-roboto "> We specialize in helping you:</span>
                                         {how.map((item, index) => (
-                                            <li className="text-h4 list-style-position: inside  px-lengthSm1 list-disc " key={index}><span className='text-cyan'>{item.title}-
+                                            <li className="card-actions sm:text-sm md:text-lg font-roboto  list-style-position: inside  px-lengthSm1 list-disc " key={index}><span className=' font-semibold'>{item.title}
                                             </span>{''}{item.description}</li>
 
 
@@ -65,31 +66,10 @@ const AboutUs: React.FC = () => {
 
                             </div>
                         </div >
-                        {/* <div className="w-full card lg:card-side bg-base-100 shadow-xl font-roboto text-purple dark:text-champagne">
-                            <div className="card-body ">
-                                <h2 className="card-title text-h2">{choice}</h2>
-                                <div className="card-actions justify-start">
-                                    <h2 className="card-title">Our values:
-                                    </h2><br />
 
-                                    
-                                    <ol className=" list-inside">
-                                        {values.map((value, index) => (
-                                            <li className="text-h4 list-style-position: inside  px-lengthSm1 list-disc " key={index}>{value}</li>
-
-
-                                        ))} 
-
-                                    </ol> 
-
-
-                                </div>
-                            </div>
-
-                        </div> */}
                         <div className="w-full card lg:card-side bg-base-100 shadow-xl font-roboto text-purple dark:text-champagne">
 
-                            <figure className="w-full"><Image src="/service/nextsteps.jpeg" alt="Next steps for product development start up book call Onirban" width={500} height={500} /></figure>
+                            <figure className="w-full md:hidden block"><Image src="/service/nextsteps.jpeg" alt="Next steps for product development start up book call Onirban" width={500} height={500} /></figure>
                             <div className="card-body justify-start">
                                 <h2 className="card-title text-h2">Ready to Launch Your Startup Journey?
                                 </h2>

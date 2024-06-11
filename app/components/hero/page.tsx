@@ -1,26 +1,34 @@
+'use client'
 import React from 'react'
 import CallToAction from '../../CallToAction';
 import Brain from "../brain/brain"
 import Link from 'next/link';
 
+// import { useRouter } from 'next/router'
+
 const Hero = () => {
+    // const router = useRouter();
+
     return (
+
         <>
-            <section className='  p-lengthLg3 '>
-                <div className=' font-oswald   text-purple dark:text-champagne'>
-                    <h1 className='text-center text-h1 font-extrabold'>Spark Your Startup. Ignite Success.</h1>
-                    <p className='font-roboto text-h2 text-purple dark:text-champagne  pt-lengthSm2 text-center'>We are your secret weapon for a successful startup. <br /> We build interactive products to validate your ideas and concepts, turning them into user-interactive applications - fast! <br />
-                        With affordable packages and flexible solutions, we fit your needs. Ignite your startup journey today!
+            <div className='grid lg:grid-cols-2 place-items-center pt-lengthLg3  pb-lengthMd4 md:pt-lengthLg1 md:pb-lengthLg4 '>
+                <div className=' py-lengthMd3  align-middle md:order-1 hidden lg:block size-auto'> <Brain /></div>
+                <div className=' py-lengthMd3'>
+                    <h1 className=' font-oswald text-purple dark:text-champagne text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter'>Spark Your Startup. Ignite Success.</h1>
+                    <p className='font-roboto text-lg mt-lengthSm0 text-purple dark:text-champagne max-w-xl '>We are your secret weapon for a successful startup. <wbr /> We build interactive products to validate your ideas and concepts, turning them into user-interactive applications - fast!
                     </p>
+                    <div className=' mt-lengthSm1 flex flex-col sm:flex-row gap-2 '>
+                        <CallToAction />
+                        <Link href="/components/services" className=' border bg-purple text-sand dark:bg-caribbean dark:text-sand flex  justify-center  btn rounded-md'>See Services</Link>
+
+                    </div>
                 </div>
 
-                <div className='flex w-full justify-center gap-lengthSm3 pt-lengthSm2'>
-                    <CallToAction></CallToAction>
-                    <Link href="/components/services" className=' text-caribbean font-roboto font-bold  m-lengthLg2'>See Services</Link>
 
-                </div>
-            </section>
-            <section className='flex justify-center'><Brain /></section>
+
+
+            </div>
 
         </>
 

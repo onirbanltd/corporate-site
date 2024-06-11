@@ -38,7 +38,7 @@ const CalendlyEmbed: React.FC<CalendlyEmbedProps> = ({ url, scriptContent }) => 
         <>
 
             <script dangerouslySetInnerHTML={{ __html: scriptContent }} />
-            <div className="calendly-inline-widget p-lengthLg3 " data-url={url}></div>
+            <div className="calendly-inline-widget w-full" data-resize="true" data-url={url} ></div>
 
         </>
     );

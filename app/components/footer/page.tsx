@@ -12,8 +12,8 @@ import Insta from "../../../public/social-icons/insta.svg"
 const Footer = () => {
     const year = new Date();
     return (
-        <section className=" bg-purple w-full">
-            <div className=" p-lengthLg2">
+        <section className=" bg-purple w-full my-lengthMd2">
+            <div className=" ">
                 <div className="flex items-center justify-start gap-x-lengthSm3">
                     <Image src={Logo} alt="Logo" height={80} width={120} />
                 </div>
@@ -31,7 +31,7 @@ const Footer = () => {
 
                 </div>
                 <div>
-                    <p className=" font-roboto text-center text-h3 pt-[56px] text-champagne">{year.getFullYear()} © Onirban Ltd. All Rights Reserved</p>
+                    <p className=" font-roboto text-center mt-lengthMd2 text-xs text-champagne">{year.getFullYear()} © Onirban Ltd. All Rights Reserved</p>
                 </div>
             </div>
         </section>
