@@ -8,7 +8,7 @@ const ContactUS = () => {
     return (
         <>
 
-            <section className='mt-lengthLg4 '>
+            <section className='mt-lengthLg3'>
 
                 <h1 className='font-oswald text-purple dark:text-champagne text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter'>Spark Your Startup. Ignite Success.</h1>
 
@@ -18,10 +18,10 @@ const ContactUS = () => {
                 </h2>
                 <h3 className="text-md  ">Schedule a free call to discuss your startup goals.</h3>
 
-                <div className=" w-full flex  pt-lengthLg3  pb-lengthMd4 md:pt-lengthLg1 md:pb-lengthLg4">
+                <div className=" w-full flex  pt-lengthMd3 ">
 
                     <figure className="w-1/2 md:block hidden"><Image src="/service/nextsteps.jpeg" alt="Next steps for product development start up book call Onirban" width={500} height={500} /></figure>
-                    <div className="w-1/2 " id="__next">
+                    <div className=" w-auto" id="__next">
                         <Calendly />
 
                     </div>

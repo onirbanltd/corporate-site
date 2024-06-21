@@ -18,7 +18,7 @@ const OurServices = () => {
     return (
         <>
 
-            <section className=" mt-lengthLg3">
+            <section className=" sm:mt-lengthLg3 md:mt-lengthSm0">
                 <div className="  pt-lengthLg3  pb-lengthMd4 md:pt-lengthLg1 md:pb-lengthLg4 dark:text-champagne text-purple">
                     <h2 className="font-oswald text-4xl lg:text-5xl font-bold lg:tracking-tight"> Startup Growth Journey to Success.</h2>
                     <h3 className="font-roboto text-lg  mt-lengthSm2">
