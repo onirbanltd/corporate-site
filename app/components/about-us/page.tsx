@@ -31,9 +31,9 @@ const AboutUs: React.FC = () => {
     return (
 
         <>
-            <section className='pt-lengthLg3 text-purple dark:text-champagne pb-lengthMd4 md:pt-lengthLg4 md:pb-lengthLg4 '>
+            <section className='mt-lengthLg3 text-purple dark:text-champagne pb-lengthMd4  tracking-tight'>
                 <h1 className="font-oswald text-4xl lg:text-5xl font-bold lg:tracking-tight  text-center ">About Us</h1>
-                <p className='text-lg font-roboto mt-lengthSm0 text-center'>{tag}</p>
+                <p className='text-lg font-roboto mt-lengthSm1 text-center'>{tag}</p>
                 {data && (
                     <>
                         <div className="w-full card card-compact lg:card-side bg-base-100 shadow-xl font-roboto text-purple dark:text-champagne">

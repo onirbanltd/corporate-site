@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -27,4 +28,18 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-} */
+}
+
+header {
+  position: sticky;
+  z-index: 30;
+  top: 0;
+}
+
+.dropdown .dropdown-content {
+  position: absolute !important;
+}
+
+.menu {
+  right: 0 !important;
+}
